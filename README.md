@@ -1,20 +1,93 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+#  Documentation & Project Overview
 
-# Run and deploy your AI Studio app
+This repository contains a modern, accessibility-focused portfolio website built with performance, usability, and maintainability in mind.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/d4e6d3ca-1901-4a64-bd96-b3ad23764f8e
+#  Portfolio Structure
 
-## Run Locally
+The project consists of four standalone pages:
 
-**Prerequisites:**  Node.js
+* **Home** — Landing page and introduction
+* **About** — Background, skills, and experience
+* **Projects** — Showcase of completed work
+* **Contact** — Contact form with local persistence
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+#  Accessibility Features
+
+Designed with accessibility as a first-class priority.
+
+### Highlights
+
+* WCAG 2.2 AA compliant
+* Keyboard-friendly navigation
+* Skip-to-content links
+* Custom focus indicators
+* Semantic HTML structure
+* ARIA labels and live regions
+
+---
+
+#  Theme Management
+
+A lightweight theme engine powers the user experience.
+
+### Features
+
+* Light & Dark mode support
+* Persistent theme preferences
+* Instant theme switching
+* Minimal runtime overhead
+
+---
+
+#  Local Storage Integration
+
+Contact submissions are stored locally in the browser.
+
+### Benefits
+
+* Message persistence
+* Outbox-style caching
+* No backend dependency
+* Improved reliability during testing
+
+---
+
+#  Performance & Optimization
+
+* Fast Vite-powered development
+* Optimized production builds
+* Responsive layouts
+* Lightweight architecture
+* Clean and maintainable codebase
+
+---
+
+#  Local Development
+
+```bash
+npm install
+npm run dev
+npm run typecheck
+npm run build
+npm run preview
+```
+
+---
+
+#  Deployment
+
+Deploy to any static hosting platform:
+
+* GitHub Pages
+* Vercel
+* Netlify
+* Cloudflare Pages
+* Firebase Hosting
+
+---
+
+> Built with a focus on accessibility, performance, and user experience.
