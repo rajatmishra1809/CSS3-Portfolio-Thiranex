@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO & Accessibility Meta Tags -->
+    <title>Rajat Mishra | Computer Science Portfolio & Research Lab</title>
+    <meta name="title" content="Rajat Mishra | Computer Science & Engineering Portfolio" />
+    <meta name="description" content="Official portfolio of Rajat Mishra, a Computer Science Undergraduate (CSE) at VIT Chennai. Showcasing highly optimized software, semantic web design, and accessibility solutions." />
+    <meta name="keywords" content="Rajat Mishra, VIT Chennai, Computer Science, CSE Student, Software Engineer, Portfolio, Responsive HTML5, Accessibilty, WCAG 2.2" />
+    <meta name="author" content="Rajat Mishra" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph for Social Integration -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rajat Mishra | Computer Science Portfolio" />
+    <meta property="og:description" content="Discover semantic, super-fast, and inclusive digital workspaces by Rajat Mishra, CSE student at Vellore Institute of Technology, Chennai." />
+    <meta property="og:url" content="https://ais-dev-zdtt5lfjihbh2w44j6pkuy-215412128621.asia-east1.run.app" />
+
+    <!-- Typography Context -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Processed Stylesheet Link -->
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- 🌓 Theme Bootstrapper: prevents flash-of-light theme during rendering -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('rajat-portfolio-theme') || 'dark';
+        if (savedTheme === 'light') {
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-bg-primary text-text-primary antialiased min-h-screen flex flex-col font-sans transition-colors duration-300">
+
+    <!-- 💡 Skip link for screen reader and keyboard accessibility users -->
+    <a href="#main-content" class="absolute left-4 top-4 z-50 -translate-y-20 bg-purple-accent text-white px-5 py-2.5 rounded-lg border border-purple-400 font-medium font-display transition-transform focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-sky-accent" aria-label="Skip to main content">
+      Skip Navigation
+    </a>
+
+    <!-- 🧭 Global Navigation Header -->
+    <header class="sticky top-0 z-40 bg-header-bg backdrop-blur-md border-b border-header-border transition-colors duration-300" aria-label="Global Portfolio Header">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-8 h-20">
+        <div class="flex items-center gap-3">
+          <div class="w-2.5 h-2.5 bg-purple-accent rounded-full animate-pulse" aria-hidden="true"></div>
+          <a href="/index.html" class="text-xl font-bold tracking-tight text-text-primary hover:text-purple-accent transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Rajat Mishra Home Title">
+            Rajat Mishra <span class="text-purple-accent font-mono text-xs ml-1">CSE @ VIT</span>
+          </a>
+        </div>
+
+        <nav aria-label="Primary site navigation sections" class="hidden md:block">
+          <ul class="flex gap-6 md:gap-8 list-none m-0 p-0 items-center">
+            <li><a href="/index.html" class="text-sm font-semibold text-purple-accent border-b-2 border-purple-accent pb-1" aria-current="page" aria-label="Current page: Index">Index</a></li>
+            <li><a href="/about.html" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Navigate to About section">About</a></li>
+            <li><a href="/projects.html" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Navigate to Projects section">Projects</a></li>
+            <li><a href="/contact.html" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Navigate to Contact section">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Dynamic theme toggler & responsive widgets container -->
+        <div class="flex items-center gap-3">
+          <!-- 🛠️ Dynamic Theme Toggle control -->
+          <button class="theme-toggle-btn p-2.5 rounded-xl border border-card-border hover:bg-bg-secondary text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent flex items-center justify-center cursor-pointer" aria-label="Toggle active theme" type="button">
+            <!-- Dynamically populated SVG -->
+          </button>
+          
+          <a href="/about.html#academics" class="hidden sm:inline-block px-4 py-2 rounded-lg bg-card-bg hover:bg-bg-secondary border border-card-border text-xs font-semibold hover:border-purple-accent/30 tracking-wide text-text-secondary hover:text-text-primary transition-all focus:outline-none focus:ring-2 focus:ring-sky-accent" aria-label="Navigate directly to educational achievements">
+            Credentials
+          </a>
+        </div>
+      </div>
+      
+      <!-- Mobile navigation sub-header -->
+      <nav aria-label="Primary Mobile Navigation" class="md:hidden border-t border-header-border bg-header-bg/95 backdrop-blur-md">
+        <ul class="flex justify-around items-center h-12 list-none m-0 p-0 text-center">
+          <li class="w-full h-full flex"><a href="/index.html" class="w-full text-xs font-bold text-purple-accent border-b-2 border-purple-accent flex items-center justify-center" aria-current="page">Index</a></li>
+          <li class="w-full h-full flex"><a href="/about.html" class="w-full text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary flex items-center justify-center transition-all">About</a></li>
+          <li class="w-full h-full flex"><a href="/projects.html" class="w-full text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary flex items-center justify-center transition-all">Projects</a></li>
+          <li class="w-full h-full flex"><a href="/contact.html" class="w-full text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary flex items-center justify-center transition-all">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 🛠️ Main Showcase Segment using Grid for visual centering -->
+    <main id="main-content" class="flex-grow flex flex-col items-center justify-center px-6 md:px-8 py-16 relative focus:outline-none" tabindex="-1">
+      
+      <!-- Backlit Glow Visual Effects representing simple modern theme design -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-1/4 left-1/4 w-[350px] h-[350px] radial-pulse-glow-1 rounded-full blur-[100px]" aria-hidden="true"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] radial-pulse-glow-2 rounded-full blur-[100px]" aria-hidden="true"></div>
+      </div>
+
+      <!-- Hero Message container using clean asymmetric desktop grid -->
+      <section class="max-w-4xl w-full flex flex-col items-start gap-6 relative z-10" aria-labelledby="hero-heading">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-accent/10 border border-purple-accent/20">
+          <span class="w-1.5 h-1.5 bg-purple-accent rounded-full animate-pulse" aria-hidden="true"></span>
+          <span class="text-[10px] font-bold uppercase tracking-widest text-purple-accent">Available for Engineering Labs</span>
+        </div>
+        
+        <h1 id="hero-heading" class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tighter leading-[1.0] text-text-primary font-display">
+          Building digital products with <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-accent to-sky-accent">strict semantic precision.</span>
+        </h1>
+
+        <p class="text-base sm:text-lg md:text-xl text-text-secondary max-w-2xl leading-relaxed mt-2 font-sans">
+          Hello, I'm <span class="text-text-primary font-semibold">Rajat Mishra</span>, a Computer Science Engineering student representing <span class="text-text-primary font-semibold">VIT Chennai</span>. I build standard-compliant, accessible software interfaces focusing on inclusive UX and structured technical modules.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
+          <a href="/projects.html" class="w-full sm:w-auto text-center px-8 py-4 bg-purple-accent text-white font-bold rounded-xl shadow-lg hover:bg-purple-accent-hover focus:outline-none focus:ring-4 focus:ring-sky-accent transition-all cursor-pointer" aria-label="Explore and audit portfolio projects">
+            Explore Project Lab
+          </a>
+          <a href="/contact.html" class="w-full sm:w-auto text-center px-8 py-4 bg-transparent border border-card-border text-text-primary font-bold rounded-xl hover:bg-bg-secondary transition-colors focus:outline-none focus:ring-4 focus:ring-sky-accent cursor-pointer" aria-label="Get in touch with Rajat Mishra">
+            Connect
+          </a>
+        </div>
+      </section>
+
+      <!-- Advanced Bento CSS Grid Layout segment -->
+      <section class="max-w-4xl w-full mt-24 bento-grid relative z-10" aria-label="Core Engineering Standards & Competencies">
+        
+        <!-- Large Card: Span 2 columns on desktop -->
+        <article class="p-6 md:p-8 rounded-2xl bg-card-bg border border-card-border shadow-card hover:border-purple-accent/40 hover:shadow-lg transition-all bento-col-span-2 group flex flex-col justify-between">
+          <div>
+            <h2 class="text-purple-accent font-mono text-xs uppercase tracking-wider font-semibold mb-3">01. Accessibility</h2>
+            <p class="text-text-primary font-display text-lg md:text-xl font-bold mb-2 group-hover:text-purple-accent transition-colors">WCAG 2.2 AA Compliance Foundations</p>
+            <p class="text-text-secondary text-sm leading-relaxed">
+              Rigid HTML5 element architecture targeting peerless reader accessibility scores, comprehensive screen reader skip navigation configurations, and detailed keyboard focus outlines.
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-2">
+            <span class="px-2.5 py-1 text-[10px] font-mono rounded bg-tag-bg text-tag-text font-bold">ARIA Live</span>
+            <span class="px-2.5 py-1 text-[10px] font-mono rounded bg-tag-bg text-tag-text font-bold">A11y Audited</span>
+          </div>
+        </article>
+
+        <!-- Tall Card: Span 2 rows on desktop if grouped vertically -->
+        <article class="p-6 md:p-8 rounded-2xl bg-card-bg border border-card-border shadow-card hover:border-purple-accent/40 hover:shadow-lg transition-all group flex flex-col justify-between bento-row-span-2">
+          <div>
+            <h2 class="text-purple-accent font-mono text-xs uppercase tracking-wider font-semibold mb-3">02. Engineering</h2>
+            <p class="text-text-primary font-display text-lg md:text-xl font-bold mb-2 group-hover:text-purple-accent transition-colors">CSE System Principles</p>
+            <p class="text-text-secondary text-sm leading-relaxed">
+              Pursuing rigorous syllabus disciplines at VIT Chennai. Crafting well-typed algorithms, complex discrete mathematics structures, and performance-tuned database schemas with full technical integrity.
+            </p>
+          </div>
+          <div class="mt-6 flex items-center justify-between text-xs text-text-muted font-mono pt-4 border-t border-card-border/80">
+            <span>VIT CHENNAI</span>
+            <span class="text-purple-accent font-bold">B.Tech CSE</span>
+          </div>
+        </article>
+
+        <!-- Standard Card 3 -->
+        <article class="p-6 md:p-8 rounded-2xl bg-card-bg border border-card-border shadow-card hover:border-purple-accent/40 hover:shadow-lg transition-all group flex flex-col justify-between">
+          <div>
+            <h2 class="text-purple-accent font-mono text-xs uppercase tracking-wider font-semibold mb-3">03. Performance</h2>
+            <p class="text-text-primary font-display text-lg font-bold mb-2 group-hover:text-purple-accent transition-colors">High Speed Rendering</p>
+            <p class="text-text-secondary text-sm leading-relaxed">
+              No-nonsense stylesheet setups, streamlined browser DOM trees, lightweight modular builds, and offline browser caching configurations.
+            </p>
+          </div>
+          <div class="mt-4 text-xs font-mono text-text-muted flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+            <span>Zero CPU overhead</span>
+          </div>
+        </article>
+
+        <!-- Standard Card 4 -->
+        <article class="p-6 md:p-8 rounded-2xl bg-card-bg border border-card-border shadow-card hover:border-purple-accent/40 hover:shadow-lg transition-all group flex flex-col justify-between">
+          <div>
+            <h2 class="text-purple-accent font-mono text-xs uppercase tracking-wider font-semibold mb-3">04. Responsiveness</h2>
+            <p class="text-text-primary font-display text-lg font-bold mb-2 group-hover:text-purple-accent transition-colors">Dynamic Fluid Grids</p>
+            <p class="text-text-secondary text-sm leading-relaxed">
+              Employing mobile-first responsive media queries and custom layout alignments that adapt gracefully across visual monitors, tablets, and mobile devices.
+            </p>
+          </div>
+          <div class="mt-4 text-xs font-mono text-text-muted flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 bg-sky-accent rounded-full"></span>
+            <span>Adaptive query logic</span>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+    <!-- 🟢 Semantic Footer -->
+    <footer class="py-12 border-t border-card-border px-6 md:px-8 bg-bg-secondary transition-colors duration-300 relative z-20" aria-label="Portfolio Footer navigation">
+      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row gap-6 justify-between items-center text-text-muted">
+        <p class="text-xs tracking-wide uppercase font-semibold text-text-secondary text-center sm:text-left">
+          &copy; 2026 Rajat Mishra &mdash; VIT Chennai CSE Academic Lab
+        </p>
+        <div class="flex gap-6">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono uppercase tracking-widest text-text-secondary hover:text-purple-accent focus:text-sky-accent focus:underline outline-none" aria-label="LinkedIn profile external linkage">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono uppercase tracking-widest text-text-secondary hover:text-purple-accent focus:text-sky-accent focus:underline outline-none" aria-label="GitHub portfolio code repository external linkage">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Client-side script loading for Theme System -->
+    <script type="module" src="/src/theme.js"></script>
+
+  </body>
+</html>

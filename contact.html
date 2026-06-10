@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO & Accessibility Meta Tags -->
+    <title>Contact Rajat Mishra | Student Portfolio & Labs</title>
+    <meta name="title" content="Contact Rajat Mishra | CSE Undergraduate at VIT Chennai" />
+    <meta name="description" content="Get in touch with Rajat Mishra, Computer Science student at VIT Chennai. Submit inquiries, academic collaboration offers, and development feedback." />
+    
+    <!-- Typography Context -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Processed Stylesheet Link -->
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- 🌓 Theme Bootstrapper: prevents flash-of-light theme during rendering -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('rajat-portfolio-theme') || 'dark';
+        if (savedTheme === 'light') {
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-bg-primary text-text-primary antialiased min-h-screen flex flex-col font-sans transition-colors duration-300">
+
+    <!-- Keyboard Skip Link -->
+    <a href="#main-content" class="absolute left-4 top-4 z-50 -translate-y-20 bg-purple-accent text-white px-5 py-2.5 rounded-lg border border-purple-400 font-medium font-display transition-transform focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-sky-accent" aria-label="Skip to main content">
+      Skip Navigation
+    </a>
+
+    <!-- 🧭 Global Header -->
+    <header class="sticky top-0 z-40 bg-header-bg backdrop-blur-md border-b border-header-border transition-colors duration-300" aria-label="Global Portfolio Header">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-8 h-20">
+        <div class="flex items-center gap-3">
+          <div class="w-2.5 h-2.5 bg-purple-accent rounded-full animate-pulse" aria-hidden="true"></div>
+          <a href="/index.html" class="text-xl font-bold tracking-tight text-text-primary hover:text-purple-accent transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Rajat Mishra Home Title">
+            Rajat Mishra <span class="text-purple-accent font-mono text-xs ml-1">CSE @ VIT</span>
+          </a>
+        </div>
+
+        <nav aria-label="Primary site navigation sections" class="hidden md:block">
+          <ul class="flex gap-6 md:gap-8 list-none m-0 p-0 items-center">
+            <li><a href="/index.html" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Navigate to Index section">Index</a></li>
+            <li><a href="/about.html" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Navigate to About section">About</a></li>
+            <li><a href="/projects.html" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Navigate to Projects section">Projects</a></li>
+            <li><a href="/contact.html" class="text-sm font-semibold text-purple-accent border-b-2 border-purple-accent pb-1" aria-current="page" aria-label="Current page: Contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Dynamic switcher -->
+        <div class="flex items-center gap-3">
+          <button class="theme-toggle-btn p-2.5 rounded-xl border border-card-border hover:bg-bg-secondary text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent flex items-center justify-center cursor-pointer" aria-label="Toggle theme mode" type="button">
+            <!-- Dynamically populated SVG -->
+          </button>
+          
+          <a href="/about.html#academics" class="hidden sm:inline-block px-4 py-2 rounded-lg bg-card-bg hover:bg-bg-secondary border border-card-border text-xs font-semibold hover:border-purple-accent/30 tracking-wide text-text-secondary hover:text-text-primary transition-all focus:outline-none focus:ring-2 focus:ring-sky-accent" aria-label="Navigate directly to academic credentials">
+            Credentials
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile navigation sub-header -->
+      <nav aria-label="Primary Mobile Navigation" class="md:hidden border-t border-header-border bg-header-bg/95 backdrop-blur-md">
+        <ul class="flex justify-around items-center h-12 list-none m-0 p-0 text-center">
+          <li class="w-full h-full flex"><a href="/index.html" class="w-full text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary flex items-center justify-center transition-all">Index</a></li>
+          <li class="w-full h-full flex"><a href="/about.html" class="w-full text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary flex items-center justify-center transition-all">About</a></li>
+          <li class="w-full h-full flex"><a href="/projects.html" class="w-full text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary flex items-center justify-center transition-all">Projects</a></li>
+          <li class="w-full h-full flex"><a href="/contact.html" class="w-full text-xs font-bold text-purple-accent border-b-2 border-purple-accent flex items-center justify-center" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 🛠️ Main Content Segment -->
+    <main id="main-content" class="flex-grow max-w-6xl w-full mx-auto px-6 md:px-8 py-12 md:py-16 focus:outline-none space-y-12" tabindex="-1">
+      
+      <!-- Screen Reader Live Announcements feedback channel -->
+      <div id="live-announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+      <!-- Top section header -->
+      <section class="border-b border-card-border pb-8" aria-labelledby="contact-intro-title">
+        <h1 id="contact-intro-title" class="text-3xl md:text-5xl font-extrabold tracking-tight font-display text-text-primary">
+          Connect With Me
+        </h1>
+        <p class="text-text-secondary text-base max-w-2xl leading-relaxed mt-3">
+          Have an academic inquiry, system design suggestion, or peer review request? Fill out the keyboard-tabbable and compliant contact inquiry terminal below.
+        </p>
+      </section>
+
+      <!-- Layout: Grid structure styled with CSS Grid -->
+      <section class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12" aria-label="Contact methods split grid">
+        
+        <!-- Left Side Cards: Physical & campus indicators -->
+        <div class="lg:col-span-2 space-y-6">
+          
+          <div class="p-6 rounded-2xl bg-card-bg border border-card-border shadow-card space-y-4">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-purple-accent font-semibold">Campus Coordinates</h2>
+            <div class="space-y-4 text-sm text-text-secondary">
+              <div>
+                <p class="text-text-muted font-bold uppercase tracking-wider text-[10px]">Academic Station</p>
+                <p class="mt-1 text-text-primary font-medium">Vellore Institute of Technology, Chennai (VIT Chennai)</p>
+                <p class="text-text-muted text-xs mt-1">Vandalur-Kelambakkam Road, Vandalur, Chennai, Tamil Nadu — 600127</p>
+              </div>
+              <div class="pt-2 border-t border-card-border/80">
+                <p class="text-text-muted font-bold uppercase tracking-wider text-[10px]">Electronic Inbox</p>
+                <p class="mt-1 text-purple-accent font-bold">mishrarajat156@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submitted Messages Log (LocalStorage Outbox List representation) -->
+          <div id="outbox-container" class="p-6 rounded-2xl bg-bg-secondary/40 border border-card-border space-y-4 hidden" aria-labelledby="outbox-title">
+            <div class="flex items-center justify-between border-b border-card-border pb-2">
+              <h3 id="outbox-title" class="text-xs font-mono uppercase tracking-wider text-text-secondary font-semibold">Submitted Outbox Log</h3>
+              <button id="clear-outbox-btn" class="text-[10px] text-text-muted hover:text-purple-accent underline outline-none focus:ring-1 focus:ring-sky-accent rounded px-1 cursor-pointer" aria-label="Delete all cached outbox messages">Clear cached</button>
+            </div>
+            <div id="outbox-list" class="max-h-56 overflow-y-auto space-y-3 scrollbar-thin">
+              <!-- Dynamically populated via Client JS -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Clean highly compliant form container -->
+        <div class="lg:col-span-3">
+          <div class="p-6 md:p-8 rounded-2xl bg-card-bg border border-card-border shadow-card space-y-6">
+            <h2 class="text-xl font-bold font-display text-text-primary">Send Structured Inquiry</h2>
+
+            <!-- Success alert box -->
+            <div id="submit-success-banner" class="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-sm flex gap-3 hidden" role="alert">
+              <span class="font-bold text-lg select-none" aria-hidden="true">&#x2714;</span>
+              <div>
+                <strong class="font-bold">Form Submitted Successfully!</strong>
+                <p class="text-xs text-text-secondary mt-1">Your response was cached successfully in your browser's local storage outbox.</p>
+              </div>
+            </div>
+
+            <!-- Standard Semantic Form -->
+            <form id="contact-form" class="space-y-4" novalidate aria-label="Secure Inquiry details input textfield list">
+              
+              <!-- Full name element -->
+              <div class="space-y-1.5">
+                <label id="lbl-name" class="block text-xs font-mono uppercase tracking-wider text-text-secondary font-semibold" for="inp-name">
+                  Full Name <span class="text-purple-accent" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  id="inp-name" 
+                  name="name" 
+                  type="text" 
+                  required 
+                  class="w-full bg-bg-secondary border border-card-border rounded-lg px-3.5 py-3 text-sm text-text-primary placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-sky-accent transition-colors" 
+                  placeholder="e.g. Professor John Doe" 
+                  aria-required="true"
+                  aria-labelledby="lbl-name"
+                />
+                <div id="err-name" class="text-xs text-red-500 font-mono mt-1 hidden" role="alert"></div>
+              </div>
+
+              <!-- Email element -->
+              <div class="space-y-1.5">
+                <label id="lbl-email" class="block text-xs font-mono uppercase tracking-wider text-text-secondary font-semibold" for="inp-email">
+                  Email Address <span class="text-purple-accent" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  id="inp-email" 
+                  name="email" 
+                  type="email" 
+                  required 
+                  class="w-full bg-bg-secondary border border-card-border rounded-lg px-3.5 py-3 text-sm text-text-primary placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-sky-accent transition-colors" 
+                  placeholder="e.g. peer-review@vit.ac.in" 
+                  aria-required="true"
+                  aria-labelledby="lbl-email"
+                />
+                <div id="err-email" class="text-xs text-red-500 font-mono mt-1 hidden" role="alert"></div>
+              </div>
+
+              <!-- Subject Element -->
+              <div class="space-y-1.5">
+                <label id="lbl-subject" class="block text-xs font-mono uppercase tracking-wider text-text-secondary font-semibold" for="inp-subject">
+                  Subject <span class="text-purple-accent" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  id="inp-subject" 
+                  name="subject" 
+                  type="text" 
+                  required 
+                  class="w-full bg-bg-secondary border border-card-border rounded-lg px-3.5 py-3 text-sm text-text-primary placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-sky-accent transition-colors" 
+                  placeholder="e.g. Research Cooperation Slot" 
+                  aria-required="true"
+                  aria-labelledby="lbl-subject"
+                />
+                <div id="err-subject" class="text-xs text-red-500 font-mono mt-1 hidden" role="alert"></div>
+              </div>
+
+              <!-- Message element -->
+              <div class="space-y-1.5">
+                <label id="lbl-message" class="block text-xs font-mono uppercase tracking-wider text-text-secondary font-semibold" for="inp-message">
+                  Message Details <span class="text-purple-accent" aria-hidden="true">*</span>
+                </label>
+                <textarea 
+                  id="inp-message" 
+                  name="message" 
+                  required 
+                  rows="4"
+                  class="w-full bg-bg-secondary border border-card-border rounded-lg px-3.5 py-3 text-sm text-text-primary placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-sky-accent transition-colors resize-y min-h-[100px]" 
+                  placeholder="Write your complete academic description or collaboration briefs..." 
+                  aria-required="true"
+                  aria-labelledby="lbl-message"
+                ></textarea>
+                <div id="err-message" class="text-xs text-red-500 font-mono mt-1 hidden" role="alert"></div>
+              </div>
+
+              <!-- Submit button -->
+              <button 
+                type="submit" 
+                class="w-full py-4 px-6 rounded-xl bg-purple-accent hover:bg-purple-accent-hover text-white font-bold text-sm tracking-wide transition-all outline-none focus:ring-4 focus:ring-sky-accent cursor-pointer"
+                aria-label="Send high-contrast contact form inquiry response"
+              >
+                Send Secure Inquiry
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Client Script module implementing complete WCAG error tracking & Persistent Storage caching -->
+    <script type="module">
+      const form = document.getElementById("contact-form");
+      const outboxContainer = document.getElementById("outbox-container");
+      const outboxList = document.getElementById("outbox-list");
+      const successBanner = document.getElementById("submit-success-banner");
+      const liveAnnounce = document.getElementById("live-announcement");
+      const clearBtn = document.getElementById("clear-outbox-btn");
+
+      const inputs = {
+        name: { input: document.getElementById("inp-name"), error: document.getElementById("err-name") },
+        email: { input: document.getElementById("inp-email"), error: document.getElementById("err-email") },
+        subject: { input: document.getElementById("inp-subject"), error: document.getElementById("err-subject") },
+        message: { input: document.getElementById("inp-message"), error: document.getElementById("err-message") }
+      };
+
+      // Load outbox records on startup
+      const renderOutbox = () => {
+        const stored = localStorage.getItem("rajat_portfolio_outbox");
+        if (stored) {
+          try {
+            const arr = JSON.parse(stored);
+            if (arr && arr.length > 0) {
+              outboxContainer.classList.remove("hidden");
+              outboxList.innerHTML = arr.map((msg, idx) => `
+                <div class="p-3 bg-bg-secondary rounded-lg border border-card-border text-xs flex flex-col gap-1">
+                  <span class="text-[10px] text-purple-accent font-bold font-mono">Inquiry Log Record</span>
+                  <strong class="text-text-primary">${escapeHTML(msg.subject)}</strong>
+                  <span class="text-text-secondary italic">"${escapeHTML(msg.message)}"</span>
+                  <span class="text-[9px] text-text-muted text-right font-mono mt-1">— ${escapeHTML(msg.name)} (${escapeHTML(msg.email)})</span>
+                </div>
+              `).join('');
+              return;
+            }
+          } catch(e) {
+            console.error(e);
+          }
+        }
+        outboxContainer.classList.add("hidden");
+      };
+
+      const escapeHTML = (str) => {
+        return str.replace(/[&<>'"]/g, 
+          tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+        );
+      };
+
+      // Validate on submit
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        
+        let isValid = true;
+        let firstInvalidElement = null;
+
+        // Reset errors
+        Object.keys(inputs).forEach(key => {
+          inputs[key].error.classList.add("hidden");
+          inputs[key].error.textContent = "";
+          inputs[key].input.removeAttribute("aria-invalid");
+        });
+        successBanner.classList.add("hidden");
+
+        // Check required fields
+        const values = {};
+        Object.keys(inputs).forEach(key => {
+          const val = inputs[key].input.value.trim();
+          values[key] = val;
+          if (!val) {
+            isValid = false;
+            inputs[key].error.textContent = `● The ${key} field is empty and required.`;
+            inputs[key].error.classList.remove("hidden");
+            inputs[key].input.setAttribute("aria-invalid", "true");
+            if (!firstInvalidElement) firstInvalidElement = inputs[key].input;
+          }
+        });
+
+        // Email regex check
+        if (values.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email)) {
+          isValid = false;
+          inputs.email.error.textContent = "● Please enter a valid email addressing scheme (e.g. peer@vit.ac.in).";
+          inputs.email.error.classList.remove("hidden");
+          inputs.email.input.setAttribute("aria-invalid", "true");
+          if (!firstInvalidElement) firstInvalidElement = inputs.email.input;
+        }
+
+        if (!isValid) {
+          liveAnnounce.textContent = "Form submission failed. Please navigate up to highlighted field errors.";
+          if (firstInvalidElement) firstInvalidElement.focus();
+          return;
+        }
+
+        // Cache message
+        const currentData = { ...values };
+        let outboxListArray = [];
+        try {
+          const saved = localStorage.getItem("rajat_portfolio_outbox");
+          if (saved) outboxListArray = JSON.parse(saved);
+        } catch (e) {
+          console.error(e);
+        }
+        outboxListArray.unshift(currentData);
+        localStorage.setItem("rajat_portfolio_outbox", JSON.stringify(outboxListArray));
+
+        // Submit feedback action
+        successBanner.classList.remove("hidden");
+        liveAnnounce.textContent = `Form successfully submitted. Message saved for review.`;
+        form.reset();
+        renderOutbox();
+      });
+
+      // Clear records handler
+      clearBtn.addEventListener("click", () => {
+        localStorage.removeItem("rajat_portfolio_outbox");
+        liveAnnounce.textContent = "Outbox logs cleared completely.";
+        renderOutbox();
+      });
+
+      // Bootstrap outbox listing
+      renderOutbox();
+    </script>
+
+    <!-- 🟢 Semantic Footer -->
+    <footer class="py-12 border-t border-card-border px-6 md:px-8 bg-bg-secondary transition-colors duration-300" aria-label="Portfolio Footer navigation">
+      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row gap-6 justify-between items-center text-text-muted">
+        <p class="text-xs tracking-wide uppercase font-semibold text-text-secondary text-center sm:text-left">
+          &copy; 2026 Rajat Mishra &mdash; VIT Chennai CSE Academic Lab
+        </p>
+        <div class="flex gap-6">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono uppercase tracking-widest text-text-secondary hover:text-purple-accent focus:text-sky-accent focus:underline outline-none" aria-label="LinkedIn profile external linkage">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono uppercase tracking-widest text-text-secondary hover:text-purple-accent focus:text-sky-accent focus:underline outline-none" aria-label="GitHub portfolio code repository external linkage">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Client-side script loading for Theme System -->
+    <script type="module" src="/src/theme.js"></script>
+
+  </body>
+</html>

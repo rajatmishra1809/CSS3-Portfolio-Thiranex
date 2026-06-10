@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO & Accessibility Meta Tags -->
+    <title>About Rajat Mishra | Computer Science Studies & Skillsets</title>
+    <meta name="title" content="About Rajat Mishra | Computer Science student at VIT Chennai" />
+    <meta name="description" content="Discover Rajat Mishra's academic journey in Computer Science and Engineering at VIT Chennai, specializing in database optimization, accessibility frameworks, and system design." />
+    
+    <!-- Typography Context -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Processed Stylesheet Link -->
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- 🌓 Theme Bootstrapper: prevents flash-of-light theme during rendering -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('rajat-portfolio-theme') || 'dark';
+        if (savedTheme === 'light') {
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-bg-primary text-text-primary antialiased min-h-screen flex flex-col font-sans transition-colors duration-300">
+
+    <!-- Keyboard Skip Link -->
+    <a href="#main-content" class="absolute left-4 top-4 z-50 -translate-y-20 bg-purple-accent text-white px-5 py-2.5 rounded-lg border border-purple-400 font-medium font-display transition-transform focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-sky-accent" aria-label="Skip to main content">
+      Skip Navigation
+    </a>
+
+    <!-- 🧭 Global Header -->
+    <header class="sticky top-0 z-40 bg-header-bg backdrop-blur-md border-b border-header-border transition-colors duration-300" aria-label="Global Portfolio Header">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-8 h-20">
+        <div class="flex items-center gap-3">
+          <div class="w-2.5 h-2.5 bg-purple-accent rounded-full animate-pulse" aria-hidden="true"></div>
+          <a href="/index.html" class="text-xl font-bold tracking-tight text-text-primary hover:text-purple-accent transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Rajat Mishra Home Title">
+            Rajat Mishra <span class="text-purple-accent font-mono text-xs ml-1">CSE @ VIT</span>
+          </a>
+        </div>
+
+        <nav aria-label="Primary site navigation sections" class="hidden md:block">
+          <ul class="flex gap-6 md:gap-8 list-none m-0 p-0 items-center">
+            <li><a href="/index.html" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Navigate to Index section">Index</a></li>
+            <li><a href="/about.html" class="text-sm font-semibold text-purple-accent border-b-2 border-purple-accent pb-1" aria-current="page" aria-label="Current page: About">About</a></li>
+            <li><a href="/projects.html" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Navigate to Projects section">Projects</a></li>
+            <li><a href="/contact.html" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent rounded" aria-label="Navigate to Contact section">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Dynamic theme toggler & widgets container -->
+        <div class="flex items-center gap-3">
+          <button class="theme-toggle-btn p-2.5 rounded-xl border border-card-border hover:bg-bg-secondary text-text-secondary hover:text-text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-sky-accent flex items-center justify-center cursor-pointer" aria-label="Toggle active theme" type="button">
+            <!-- Dynamic SVG -->
+          </button>
+          
+          <a href="#academics" class="hidden sm:inline-block px-4 py-2 rounded-lg bg-card-bg hover:bg-bg-secondary border border-card-border text-xs font-semibold hover:border-purple-accent/30 tracking-wide text-text-secondary hover:text-text-primary transition-all focus:outline-none focus:ring-2 focus:ring-sky-accent" aria-label="Navigate directly to educational achievements section below">
+            Credentials
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile navigation sub-header -->
+      <nav aria-label="Primary Mobile Navigation" class="md:hidden border-t border-header-border bg-header-bg/95 backdrop-blur-md">
+        <ul class="flex justify-around items-center h-12 list-none m-0 p-0 text-center">
+          <li class="w-full h-full flex"><a href="/index.html" class="w-full text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary flex items-center justify-center transition-all">Index</a></li>
+          <li class="w-full h-full flex"><a href="/about.html" class="w-full text-xs font-bold text-purple-accent border-b-2 border-purple-accent flex items-center justify-center" aria-current="page">About</a></li>
+          <li class="w-full h-full flex"><a href="/projects.html" class="w-full text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary flex items-center justify-center transition-all">Projects</a></li>
+          <li class="w-full h-full flex"><a href="/contact.html" class="w-full text-xs font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary flex items-center justify-center transition-all">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 🛠️ Main Content Segment -->
+    <main id="main-content" class="flex-grow max-w-6xl w-full mx-auto px-6 md:px-8 py-12 md:py-16 focus:outline-none space-y-16" tabindex="-1">
+      
+      <!-- Profile Description Overview: 2D Grid Setup on desktop, Stack on mobile -->
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start" aria-labelledby="about-intro-title">
+        <div class="lg:col-span-2 space-y-6">
+          <h1 id="about-intro-title" class="text-4xl md:text-5xl font-extrabold tracking-tight font-display text-text-primary">
+            Engineering a unified,<br />accessible digital landscape.
+          </h1>
+          <p class="text-text-secondary text-base leading-relaxed">
+            I am a Computer Science and Engineering student at Vellore Institute of Technology (VIT), Chennai. My code focus lies in web architectures, software system optimization, and building inclusive user interfaces that score perfectly on performance, accessibility (WCAG 2.2), and digital rendering benchmarks.
+          </p>
+          <p class="text-text-muted text-sm leading-relaxed">
+            I specialize in full-stack setups, responsive schemas, and modular codebases. My academic background empowers me to solve complex architectural challenges in algorithms and databases, keeping focus firmly on semantic code, accessibility safeguards, and keyboard fluidity.
+          </p>
+        </div>
+
+        <!-- Sidebar context card with custom visual indicators -->
+        <div class="p-6 rounded-2xl bg-card-bg border border-card-border shadow-card space-y-4">
+          <h4 class="text-xs font-mono uppercase tracking-widest text-purple-accent font-semibold flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-purple-accent"></span>
+            Core Coordinates
+          </h4>
+          <ul class="space-y-4 list-none m-0 p-0 text-sm text-text-secondary">
+            <li class="flex items-start gap-2.5">
+              <span class="text-purple-accent font-mono text-xs select-none">●</span>
+              <span>Based in <strong class="text-text-primary font-medium">Chennai, India</strong></span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-purple-accent font-mono text-xs select-none">●</span>
+              <span>Enrolled in <strong class="text-text-primary font-medium">B.Tech Computer Science</strong></span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-purple-accent font-mono text-xs select-none">●</span>
+              <span>E-mail: <a href="mailto:mishrarajat156@gmail.com" class="text-purple-accent hover:underline focus:outline-none focus:ring-1 focus:ring-sky-accent rounded font-medium">mishrarajat156@gmail.com</a></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Timeline Academics Segment -->
+      <section id="academics" class="space-y-8" aria-labelledby="academics-title">
+        <h2 id="academics-title" class="text-2xl md:text-3xl font-extrabold tracking-tight font-display text-text-primary border-b border-card-border pb-3 flex items-center gap-2">
+          Academic Milestones
+        </h2>
+        
+        <div class="relative pl-6 border-l-2 border-card-border space-y-12">
+          
+          <article class="relative space-y-3">
+            <!-- Timeline Node Indicator -->
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-bg-primary border-2 border-purple-accent" aria-hidden="true"></div>
+            
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-xs font-mono text-text-muted gap-2">
+              <span class="tracking-widest font-semibold">2024 — PRESENT</span>
+              <span class="px-2.5 py-0.5 rounded bg-purple-accent/10 text-purple-accent border border-purple-accent/20 font-semibold uppercase self-start sm:self-auto">CGPA: 9.12 / 10</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-text-primary font-display">B.Tech in Computer Science and Engineering (CSE)</h3>
+            <p class="text-text-secondary font-medium">Vellore Institute of Technology (VIT), Chennai</p>
+            
+            <div class="pt-2">
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-text-muted">Highlighted Laboratory Syllabi:</span>
+              <ul class="flex flex-wrap gap-2 mt-2 list-none m-0 p-0" aria-label="VIT Coursework labs list">
+                <li class="px-3 py-1.5 text-xs rounded-lg bg-bg-secondary border border-card-border text-text-primary font-medium">Data Structures & Algorithms</li>
+                <li class="px-3 py-1.5 text-xs rounded-lg bg-bg-secondary border border-card-border text-text-primary font-medium">Database Management Systems</li>
+                <li class="px-3 py-1.5 text-xs rounded-lg bg-bg-secondary border border-card-border text-text-primary font-medium">Operating Systems & Lab</li>
+                <li class="px-3 py-1.5 text-xs rounded-lg bg-bg-secondary border border-card-border text-text-primary font-medium">Computer Organization & Architecture</li>
+                <li class="px-3 py-1.5 text-xs rounded-lg bg-bg-secondary border border-card-border text-text-primary font-medium">Web Technologies Unit</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="relative space-y-3">
+            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-bg-primary border-2 border-card-border" aria-hidden="true"></div>
+            
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between text-xs font-mono text-text-muted gap-2">
+              <span class="tracking-widest font-semibold">2022 — 2024</span>
+              <span class="px-2.5 py-0.5 rounded bg-bg-secondary border border-card-border text-text-secondary font-semibold uppercase self-start sm:self-auto">Score: 95.8%</span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-text-primary font-display">Senior Secondary Education</h3>
+            <p class="text-text-secondary font-medium">Central Board of Secondary Education (CBSE)</p>
+            
+            <div class="pt-2">
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-text-muted">Core Subject Frameworks:</span>
+              <ul class="flex flex-wrap gap-2 mt-2 list-none m-0 p-0" aria-label="CBSE Coursework list">
+                <li class="px-3 py-1.5 text-xs rounded-lg bg-bg-secondary border border-card-border text-text-primary font-medium">Computer Science (Python & File Systems)</li>
+                <li class="px-3 py-1.5 text-xs rounded-lg bg-bg-secondary border border-card-border text-text-primary font-medium">Advanced Mathematics</li>
+                <li class="px-3 py-1.5 text-xs rounded-lg bg-bg-secondary border border-card-border text-text-primary font-medium">Physics & Analytical Chemistry</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Technologies Bento Grid: Key frameworks & skills setup -->
+      <section class="space-y-8" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" class="text-2xl md:text-3xl font-extrabold tracking-tight font-display text-text-primary border-b border-card-border pb-3">
+          Technology Matrices
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="p-6 rounded-2xl bg-card-bg border border-card-border hover:border-purple-accent/30 transition-all space-y-4 shadow-card">
+            <h3 class="font-display font-bold text-text-primary flex items-center justify-between border-b border-card-border pb-2">
+              <span>Languages & Data</span>
+              <span class="text-xs text-purple-accent font-mono font-bold">01</span>
+            </h3>
+            <div class="flex flex-wrap gap-2" aria-label="Coding languages list">
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">TypeScript</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">JavaScript</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">C++</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">Java</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">Python</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">SQL (Postgres/MySQL)</span>
+            </div>
+          </article>
+
+          <article class="p-6 rounded-2xl bg-card-bg border border-card-border hover:border-purple-accent/30 transition-all space-y-4 shadow-card">
+            <h3 class="font-display font-bold text-text-primary flex items-center justify-between border-b border-card-border pb-2">
+              <span>Frameworks & Libs</span>
+              <span class="text-xs text-purple-accent font-mono font-bold">02</span>
+            </h3>
+            <div class="flex flex-wrap gap-2" aria-label="Web frameworks list">
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">React.js</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">Vite Server</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">Tailwind CSS</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">Node.js</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">Express</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">D3.js</span>
+            </div>
+          </article>
+
+          <article class="p-6 rounded-2xl bg-card-bg border border-card-border hover:border-purple-accent/30 transition-all space-y-4 shadow-card">
+            <h3 class="font-display font-bold text-text-primary flex items-center justify-between border-b border-card-border pb-2">
+              <span>Standards & Tools</span>
+              <span class="text-xs text-purple-accent font-mono font-bold">03</span>
+            </h3>
+            <div class="flex flex-wrap gap-2" aria-label="Engineering tools and web standards list">
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">Git & GitHub</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">WCAG 2.2 Auditing</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">Semantic HTML5</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">REST Protocols</span>
+              <span class="px-2.5 py-1 text-xs rounded bg-bg-secondary border border-card-border text-text-primary font-mono">Linux Terminal</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 🟢 Semantic Footer -->
+    <footer class="py-12 border-t border-card-border px-6 md:px-8 bg-bg-secondary transition-colors duration-300" aria-label="Portfolio Footer navigation">
+      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row gap-6 justify-between items-center text-text-muted">
+        <p class="text-xs tracking-wide uppercase font-semibold text-text-secondary text-center sm:text-left">
+          &copy; 2026 Rajat Mishra &mdash; VIT Chennai CSE Academic Lab
+        </p>
+        <div class="flex gap-6">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono uppercase tracking-widest text-text-secondary hover:text-purple-accent focus:text-sky-accent focus:underline outline-none" aria-label="LinkedIn profile external linkage">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono uppercase tracking-widest text-text-secondary hover:text-purple-accent focus:text-sky-accent focus:underline outline-none" aria-label="GitHub portfolio code repository external linkage">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Client-side script loading for Theme System -->
+    <script type="module" src="/src/theme.js"></script>
+
+  </body>
+</html>

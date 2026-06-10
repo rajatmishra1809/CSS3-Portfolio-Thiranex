@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+:root {
+  /* Dynamic Light Mode Archetype */
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #f1f3f5;
+  --text-primary: #1a1a1e;
+  --text-secondary: #495057;
+  --text-muted: #868e96;
+  --card-bg: #ffffff;
+  --card-border: #e9ecef;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --header-bg: rgba(248, 249, 250, 0.85);
+  --header-border: #e9ecef;
+  
+  --purple-accent: #7950f2;
+  --purple-accent-hover: #6741d9;
+  --purple-glow: rgba(121, 80, 242, 0.06);
+  --sky-accent: #15aabf;
+  --sky-accent-hover: #0c8599;
+  --sky-glow: rgba(21, 170, 191, 0.06);
+  --tag-bg: #f1f3f5;
+  --tag-text: #495057;
+}
+
+:root.dark, [data-theme="dark"] {
+  /* Dynamic Dark Mode Archetype */
+  --bg-primary: #09090b;
+  --bg-secondary: #141417;
+  --text-primary: #fafafa;
+  --text-secondary: #d4d4d8;
+  --text-muted: #71717a;
+  --card-bg: #111113;
+  --card-border: #27272a;
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --header-bg: rgba(9, 9, 11, 0.85);
+  --header-border: #1f1f23;
+  
+  --purple-accent: #a855f7;
+  --purple-accent-hover: #9333ea;
+  --purple-glow: rgba(168, 85, 247, 0.04);
+  --sky-accent: #38bdf8;
+  --sky-accent-hover: #0ea5e9;
+  --sky-glow: rgba(56, 189, 248, 0.04);
+  --tag-bg: #22123b;
+  --tag-text: #c084fc;
+}
+
+@theme {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-header-bg: var(--header-bg);
+  --color-header-border: var(--header-border);
+  --color-purple-accent: var(--purple-accent);
+  --color-purple-accent-hover: var(--purple-accent-hover);
+  --color-sky-accent: var(--sky-accent);
+  --color-sky-accent-hover: var(--sky-accent-hover);
+  --color-tag-bg: var(--tag-bg);
+  --color-tag-text: var(--tag-text);
+  
+  --font-sans: "Inter", ui-sans-serif, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --shadow-card: var(--card-shadow);
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  header, main, footer, article, section, div, input, textarea, button, p, h1, h2, h3, h4, span, a {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--sky-accent) !important;
+    outline-offset: 4px !important;
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25) !important;
+  }
+}
+
+/* Complex Bento Grid layouts with 2D column and row controls */
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Multi-dimensional Bento alignment capabilities */
+.bento-col-span-2 {
+  grid-column: span 1;
+}
+@media (min-width: 768px) {
+  .bento-col-span-2 {
+    grid-column: span 2;
+  }
+}
+
+.bento-row-span-2 {
+  grid-row: span 1;
+}
+@media (min-width: 768px) {
+  .bento-row-span-2 {
+    grid-row: span 2;
+  }
+}
+
+/* Hero responsive grid architecture */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+/* High performance backdrop indicators */
+.radial-pulse-glow-1 {
+  background: radial-gradient(circle at center, var(--purple-glow) 0%, transparent 70%);
+}
+
+.radial-pulse-glow-2 {
+  background: radial-gradient(circle at center, var(--sky-glow) 0%, transparent 70%);
+}
+
+/* Accessibility reduced motion fallback */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
